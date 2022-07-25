@@ -20,6 +20,7 @@ public class TodosTest {
         sut.addTask(task);
 
         Assertions.assertEquals(expected.listTask, sut.listTask);
+        System.out.println("Тест AddTask закончен");
     }
 
     @Test
@@ -32,6 +33,7 @@ public class TodosTest {
         sut.removeTask("B");
 
         Assertions.assertEquals(expected.listTask, sut.listTask);
+        System.out.println("Тест GetAllTask закончен");
     }
 
     @Test
@@ -50,5 +52,7 @@ public class TodosTest {
         String result = sut.getAllTasks();
 
         Assertions.assertEquals(expected, result);
+        System.out.println("Тест RemoveTask закончен");
+
     }
 }
